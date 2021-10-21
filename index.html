@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <style>
+        .container{
+            height: 800px;
+            width: 600px;
+            border: 3px solid black;
+            background-color: wheat;
+            margin: auto;
+        }
+        .header{
+            height: 100px;
+            width: 500px;
+            margin: 25px auto auto auto;
+            border: 2px solid black;
+            background-color: whitesmoke;
+        }
+        .TDL{
+            height: 550px;
+            width: 500px;
+            margin: 40px auto auto auto;
+            border: 2px solid black;
+            background-color: whitesmoke;
+            overflow: auto;
+        }
+        .Addbutton{
+            height: 37px;
+            background-color: whitesmoke;
+            color: black;
+            margin: 20px 47px auto auto;
+            padding: 8px 25px;
+            border-color: white;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bolder;
+            float: right;
+        }
+        .AddTDL{
+            height: 30px;
+            width: 392px;
+            margin: 20px 20px auto auto;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <script src="index.js"></script>
+    <div class="container">
+        <!--標題欄開始-->
+        <div class="header">
+            <p style="font-weight: bolder; font-size: 30px; text-align: center; color: red;">To-Do-List 待辦清單</p>
+       
+       
+        </div>
+        <!--標題欄結束-->
+        <!--待辦事項開始-->
+        <div class="TDL" >
+            <div id="Ttop"></div>
+
+
+        </div>
+        <!--待辦事項結束-->
+        <button class="Addbutton" id="add" onclick="Add()">新增</button>
+        <input type="text" class="AddTDL" id="AddTDL" placeholder="請輸入待辦事項">
+
+        
+    </div>
+</body>
+</html>
