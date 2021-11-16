@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入系統</title>
+    <style>
+        .container{
+            height: 250px;
+            width: 350px;
+            border: 2px solid black;
+            background-color: white;
+            margin: auto;
+        }
+        .login{
+            height: auto;
+            width: auto;
+            margin: 30px 50px 30px 50px;
+        }
+        .bottom{
+            height: auto;
+            width: auto;
+            margin: 10px 50px 10px 50px;
+        }
+    </style>
+</head>
+<body>
+    <script src="password.js"></script>
+    <div class='container'>
+        <p style="margin: 0px; text-align: center; font-size: 42px;">登入系統</p>
+        <div class='login'>
+            <p style="float: left; margin: 5px">帳號：</p>
+            <input type="text" id="ID" style="margin: 5px">
+            <p style="float: left; margin: 5px">密碼：</p>
+            <input type="text" id="PWD"  style="margin: 5px">
+        </div>
+        <div class='bottom'>
+            <input type="button" value="登入" style="margin:10px 34px 10px 34px; font-size: 18px;" onclick="login()">
+            <input type="button" value="註冊" style="margin:10px 34px 10px 34px; font-size: 18px;" onclick="signup()">
+        </div>
+
+    </div>
+
+</body>
+</html>

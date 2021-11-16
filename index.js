@@ -28,3 +28,10 @@ function Add() {
         alert("尚未輸入待辦事項")
     }
 }
+
+document.addEventListener("DOMContentLoaded", function(){
+    if (typeof (Storage) !== "undefined") {
+    } else {
+        alert("此瀏覽器不支援Web Storage")
+    }
+})
